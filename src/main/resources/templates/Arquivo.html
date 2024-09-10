@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Arquivos</title>
+</head>
+<body>
+<h1>Lista de Arquivos Cadastrados</h1>
+<br/>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nome Arquivo</th>
+        <th>Tipo</th>
+        <th>Data Upload</th>
+        <th>Usuario</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="arquivo : ${arquivoLivros}">
+        <td th:text="${arquivo.getId()}">ID</td>
+        <td th:text="${arquivo.getNomeArquivo()}">Nome Arquivo</td>
+        <td th:text="${arquivo.getTipo()}">Tipo</td>
+        <td th:text="${arquivo.getDataUpload()}">Data Upload</td>
+        <td th:text="${arquivo.getUsuario()}">Usuario</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuario</title>
+</head>
+<body>
+<h1>Lista de Usuarios Cadastrados</h1>
+<br/>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nome da Empresa</th>
+        <th>Email</th>
+        <th>Cnpj</th>
+        <th>Arquivos</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="usuario : ${listaUsuarios}">
+        <td th:text="${usuario.getId()}">ID</td>
+        <td th:text="${usuario.getNomeEmpresa()}">Nome da Empresa</td>
+        <td th:text="${usuario.getEmail()}">Email</td>
+        <td th:text="${usuario.getCnpj()}">Cnpj</td>
+        <td th:text="${usuario.getArquivos()}">Arquivos</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
