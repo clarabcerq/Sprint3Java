@@ -19,6 +19,10 @@ Para subir a aplicação na AZURE você deve baixar o plugin do Azure Tools:
 Caso esteja no Eclipse basta ir no marketplace
 Caso esteja com IntelliJ vá em Settings e Plugins.
 
+Vídeo da Aplicação no YouTube:
+
+https://youtu.be/LJuqhc0s1Lg
+
 Integrantes:
 1. Clara Barreto Cerqueira
 2. Guilherme Magalhães
